@@ -24,7 +24,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         currentColorView.layer.cornerRadius = 15
-        currentColorView.tintColor.ciColor
         currentColorView.backgroundColor = UIColor(
             red: 1,
             green: 1,
