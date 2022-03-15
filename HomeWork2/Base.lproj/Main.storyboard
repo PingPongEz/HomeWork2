@@ -130,36 +130,30 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="IKF-mY-1QM">
-                                <rect key="frame" x="82.666666666666671" y="548" width="46.000000000000014" height="131"/>
+                                <rect key="frame" x="82.666666666666671" y="548" width="43.666666666666671" height="131"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="255.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8N3-NF-aDx">
-                                        <rect key="frame" x="0.0" y="0.0" width="46" height="20.333333333333332"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46.329999999999998" id="JXT-BR-nPZ"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="0.0" width="43.666666666666664" height="20.333333333333332"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="255.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8Y2-58-vaw">
-                                        <rect key="frame" x="0.0" y="55.333333333333378" width="46" height="20.333333333333336"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46.329999999999998" id="KHp-tO-9NO"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="55.333333333333378" width="43.666666666666664" height="20.333333333333336"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="255.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="BhS-35-m03">
-                                        <rect key="frame" x="0.0" y="110.66666666666663" width="46" height="20.333333333333343"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="46.329999999999998" id="mns-fY-PWY"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="110.66666666666663" width="43.666666666666664" height="20.333333333333343"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.670000000000002" id="obx-CZ-GQN"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
