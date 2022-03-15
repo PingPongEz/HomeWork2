@@ -9,14 +9,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet var redColorView: UIView!
-    @IBOutlet var greenColorView: UIView!
-    @IBOutlet var blueColorView: UIView!
     
     @IBOutlet var countOfRed: UILabel!
     @IBOutlet var countOfGreen: UILabel!
     @IBOutlet var countOfBlue: UILabel!
     
+    @IBOutlet var currentColorView: UIView!
     
     @IBOutlet var sliderForRed: UISlider!
     @IBOutlet var sliderForGreen: UISlider!
@@ -25,9 +23,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redColorView.backgroundColor = .red
-        greenColorView.backgroundColor = .green
-        blueColorView.backgroundColor = .blue
+        currentColorView.layer.cornerRadius = 15
+        currentColorView.tintColor.ciColor
+        currentColorView.backgroundColor = UIColor(
+            red: 1,
+            green: 1,
+            blue: 1,
+            alpha: 1
+        )
         
         sliderForRed.minimumTrackTintColor = .red
         sliderForGreen.minimumTrackTintColor = .green
@@ -36,18 +39,32 @@ class ViewController: UIViewController {
     }
 
     @IBAction func sliderForRedSliding() {
+        setColor()
+        let roundedValue = roundf(sliderForRed.value * 100) / 100
+        countOfRed.text = String(roundedValue)
     }
     
     @IBAction func sliderForGreenSliding() {
+        setColor()
+        let roundedValue = roundf(sliderForGreen.value * 100) / 100
+        countOfGreen.text = String(roundedValue)
     }
     
     @IBAction func sliderForBlueSliding() {
+        setColor()
+        let roundedValue = roundf(sliderForBlue.value * 100) / 100
+        countOfBlue.text = String(roundedValue)
     }
-    
-    
     
 }
 
 extension ViewController {
-    
+    func setColor() {
+        currentColorView.backgroundColor = UIColor(
+            red: CGFloat(sliderForRed.value),
+            green: CGFloat(sliderForGreen.value),
+            blue: CGFloat(sliderForBlue.value),
+            alpha: 1
+        )
+    }
 }
