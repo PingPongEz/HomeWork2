@@ -31,9 +31,9 @@ class ViewController: UIViewController {
         
         currentColorView.layer.cornerRadius = 15
         currentColorView.backgroundColor = UIColor(
-            red: 1,
-            green: 1,
-            blue: 1,
+            red: CGFloat(sliderForRed.value),
+            green: CGFloat(sliderForGreen.value),
+            blue: CGFloat(sliderForBlue.value),
             alpha: 1
         )
         currentColorView.layer.borderWidth = 1.4
@@ -44,29 +44,25 @@ class ViewController: UIViewController {
         
         sliderForRed.minimumTrackTintColor = .red
         sliderForGreen.minimumTrackTintColor = .green
-        sliderForBlue.minimumTrackTintColor = .blue
         
         buttonToGetColor.layer.cornerRadius = 15
         
     }
 
     
-    @IBAction func sliderForRedSliding() {
+    @IBAction func slidersSliding(_ sender: UISlider) {
         setColor()
-        let roundedValue = roundf(sliderForRed.value * 100) / 100
-        countOfRed.text = String(roundedValue)
-    }
-    
-    @IBAction func sliderForGreenSliding() {
-        setColor()
-        let roundedValue = roundf(sliderForGreen.value * 100) / 100
-        countOfGreen.text = String(roundedValue)
-    }
-    
-    @IBAction func sliderForBlueSliding() {
-        setColor()
-        let roundedValue = roundf(sliderForBlue.value * 100) / 100
-        countOfBlue.text = String(roundedValue)
+        switch sender {
+        case sliderForRed:
+            countOfRed.text =
+            String(roundf(sliderForRed.value * 100) / 100)
+        case sliderForGreen:
+            countOfGreen.text =
+            String(roundf(sliderForGreen.value * 100) / 100)
+        default:
+            countOfBlue.text =
+            String(roundf(sliderForBlue.value * 100) / 100)
+        }
     }
     
     @IBAction func gettingColor() {

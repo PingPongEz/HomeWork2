@@ -71,19 +71,19 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="X8t-XX-GvU">
                                 <rect key="frame" x="124" y="308" width="272" height="31"/>
                                 <connections>
-                                    <action selector="sliderForRedSliding" destination="BYZ-38-t0r" eventType="valueChanged" id="FH0-FG-In6"/>
+                                    <action selector="slidersSliding:" destination="BYZ-38-t0r" eventType="valueChanged" id="03T-Vp-wnA"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="p8L-MH-659">
                                 <rect key="frame" x="124" y="364" width="272" height="31"/>
                                 <connections>
-                                    <action selector="sliderForGreenSliding" destination="BYZ-38-t0r" eventType="valueChanged" id="Tfe-yc-69t"/>
+                                    <action selector="slidersSliding:" destination="BYZ-38-t0r" eventType="valueChanged" id="DYj-8U-nHx"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1vE-Fp-xZq">
                                 <rect key="frame" x="124" y="420" width="272" height="31"/>
                                 <connections>
-                                    <action selector="sliderForBlueSliding" destination="BYZ-38-t0r" eventType="valueChanged" id="83Q-uN-s97"/>
+                                    <action selector="slidersSliding:" destination="BYZ-38-t0r" eventType="valueChanged" id="tUU-Vg-Sb4"/>
                                 </connections>
                             </slider>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEc-xz-gfo">
